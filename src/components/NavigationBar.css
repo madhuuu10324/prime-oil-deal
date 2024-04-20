@@ -1,0 +1,137 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 10px solid rgb(218, 106, 26);
+  }
+  
+  .navbar-logo img {
+    height: 50px; 
+    margin-right: 40px;
+    width: auto;
+  }
+  
+  .navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar-links ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-links ul li a {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .navbar-links ul li a:hover::after {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 2px;
+    background-color: rgb(255, 122, 20);
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  .navbar-links ul li a:hover::after {
+    width: 100%; 
+  }
+  .login-menu {
+    position: relative;
+    max-width: 200px;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out; 
+    opacity: 0; 
+    pointer-events: none; 
+    z-index: 2;
+  }
+  .submenu a {
+    flex-direction: column;
+    display: inline-block; 
+    padding: 5px 10px; 
+  }
+  .login-menu:hover .submenu,
+.submenu:hover {
+  display: block;
+  opacity: 1; 
+  pointer-events: auto; 
+}
+  
+  .navbar-contact {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .navbar-contact img {
+    margin-right: 30px;
+    height: 90px;
+  }
+  .contact-p {
+    margin-right: 100px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px; 
+  }
+  
+  .contact-p h3 {
+    margin: 0; 
+  }
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-contact {
+      display: none;
+    }
+  }
+ /* Hamburger icon */
+.hamburger-menu {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-contact {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-right: 20px; 
+  }
+}

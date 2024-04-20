@@ -1,0 +1,108 @@
+.testimonial-wrap-layout1 {
+    background-color: #ffffff;
+    padding: 40px 40px 40px 40px;
+}
+
+h1 {
+    color: rgb(243, 85, 0); 
+}
+
+h1 span {
+    color: rgb(29, 39, 69);
+    text-decoration: none; 
+}
+
+@media (max-width: 1199px) {
+    .testimonial-wrap-layout1 {
+        padding-bottom: 85px;
+    }
+}
+
+@media (max-width: 991px) {
+    .testimonial-wrap-layout1 {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-wrap-layout1 {
+        padding-bottom: 55px;
+    }
+}
+
+@media (max-width: 575px) {
+    .testimonial-wrap-layout1 {
+        padding-bottom: 40px;
+    }
+}
+
+.testimonial-box-layout1{
+    padding: 30px 30px 30px 30px;
+    height: 400px;
+    width: 400px; /* Adjust width as needed */
+    border-radius: 30px; /* Remove border-radius to make it square */
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.testimonial-box-layout1 .icon-box {
+    margin-top: 20px;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.testimonial-box-layout1 .icon-box path{
+    fill: #ff8200;
+}
+
+.testimonial-box-layout1 .description{
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.testimonial-box-layout1 .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.testimonial-box-layout1 .designation {
+    font-style: italic;
+    color: #7D828E;
+}
+.text-center {
+    text-align: center;
+    padding-top: 40px 40px 40px 40px;
+  }
+  
+  .btn-fill {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn-fill:hover {
+    background-color: #f4870b; /* Orange background color on hover */
+  }
+.test-container{
+    margin: 0 auto;
+} 
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
+    justify-self: center;
+    align-items: center;
+  }
+  
